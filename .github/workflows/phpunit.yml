@@ -1,0 +1,17 @@
+name: PHPUnit
+
+jobs:
+    phpunit:
+        # this code is mostly identical bootstrap
+        runs-on: ubuntu-latest
+
+        steps:
+            -   uses: actions/checkout@v2
+            -   uses: shivammathur/setup-php@v1
+                with:
+                    php-version: php7.3
+                    coverage: none
+
+            # this is your custom code
+            -   run: composer install --no-progress
+            -   run: vendor/bin/phpunit tests
