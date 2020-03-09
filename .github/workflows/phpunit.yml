@@ -1,5 +1,11 @@
 name: PHPUnit
 
+on:
+    pull_request: null
+    push:
+        branches:
+            - master
+
 jobs:
     phpunit:
         # this code is mostly identical bootstrap
