@@ -1,5 +1,7 @@
 {
     "require-dev": {
-        "symplify/easy-coding-standard-tester": "^7.2.6"
-    }
+        "symplify/easy-coding-standard-tester": "dev-master#b6a0fde"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
