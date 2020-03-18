@@ -20,4 +20,4 @@ jobs:
 
             # this is your custom code
             -   run: composer install --no-progress
-            -   run: vendor/bin/phpunit tests
+            -   run: vendor/bin/phpunit
